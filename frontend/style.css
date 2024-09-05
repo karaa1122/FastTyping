@@ -1,80 +1,58 @@
-* {
-    box-sizing: border-box;
-  }
- #f
-  {
-    text-align: top;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    font-size: 2.5rem;
-    color: #A1922E;
-    
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
 
-   
-  }
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
 
+.timer {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff6347; /* Tomato color */
+}
 
+.quote-display {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+  text-align: left;
+  color: #333; /* Dark gray */
+}
 
+.quote-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #333; /* Dark gray */
+}
 
+.correct {
+  color: green;
+}
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #1E0555;
-  }
-  
-  body, .quote-input {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .container {
-    background-color: #F0DB4F;
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 700px;
-    max-width: 90%;
-  }
-  
-  .timer {
-    position: absolute;
-    top: 2rem;
-    font-size: 3rem;
-    color: #F0DB4F;
-    font-weight: bold;
-  }
-  
-  .quote-display {
-    margin-bottom: 1rem;
-    margin-left: calc(1rem + 2px);
-    margin-right: calc(1rem + 2px);
-  }
-  
-  .quote-input {
-    background-color: transparent;
-    border: 2px solid #A1922E;
-    outline: none;
-    width: 100%;
-    height: 8rem;
-    margin: auto;
-    resize: none;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border-radius: .5rem;
-  }
-  
-  .quote-input:focus {
-    border-color: black;
-  }
-  
-  .correct {
-    color: green;
-  }
-  
-  .incorrect {
-    color: red;
-    text-decoration: underline;
-  }
+.incorrect {
+  color: red;
+}
+
+#f {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555; /* Medium gray */
+}
