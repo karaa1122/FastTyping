@@ -46,9 +46,9 @@ function startTimer() {
       clearInterval(timerInterval);
       Swal.fire({
         title: 'کاتت نەما گیانە',
-        text: 'کاتت نما گیانا',
+        text: '  دووبارە هەوڵ دەوە',
         icon: 'بەداخەوە',
-        confirmButtonText: 'ئەو جارەی چ نەجوە بجی'
+        confirmButtonText: 'ئەو جارەی چ نەجوە بچی'
       }).then(() => {
         renderNewQuote();
       });
