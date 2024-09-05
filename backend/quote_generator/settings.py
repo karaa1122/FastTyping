@@ -1,9 +1,13 @@
-
 from pathlib import Path
+import environs
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+env = environs.Env()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+SECRET_KEY = env.str('SECRET_KEY', default='3q&xtksx)zhu_(f^022e%jniy+iso*w9io)^!b+x!b!t#tfihc')
+ALLOWED_HOSTS = ["*"]
+DEBUG = True
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -66,9 +70,14 @@ WSGI_APPLICATION = 'quote_generator.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': env.str('PRIMARY_DB_HOST', default='localhost'),
+        'NAME': env.str('PRIMARY_DB_NAME', default='postgres'),
+        'USER': env.str('PRIMARY_DB_USER', default='postgres'),
+        'PASSWORD': env.str('PRIMARY_DB_PASSWORD', default='12'),
+        'PORT': env.int('PRIMARY_DB_PORT', default=5432),
+        'ATOMIC_REQUESTS': True,
+    },
 }
 
 
