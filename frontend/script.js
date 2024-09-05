@@ -48,7 +48,7 @@ function startTimer() {
         title: 'کاتت نەما گیانە',
         text: '  دووبارە هەوڵ دەوە',
         icon: 'بەداخەوە',
-        confirmButtonText: 'ئەو جارەی چ نەجوە بچی'
+        confirmButtonText: 'ئەو جارەی چ نەچوە بچی'
       }).then(() => {
         renderNewQuote();
       });
