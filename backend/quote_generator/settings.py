@@ -9,20 +9,6 @@ SECRET_KEY = env.str('SECRET_KEY', default='3q&xtksx)zhu_(f^022e%jniy+iso*w9io)^
 ALLOWED_HOSTS = ["*"]
 DEBUG = True
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-wj&cojo(m+5q=*d7trvng0d+9u(##9s_9l*f#g39*8)(czm)*s'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
