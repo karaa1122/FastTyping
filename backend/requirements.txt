@@ -5,3 +5,4 @@ environs==10.3.0
 psycopg2==2.9.9
 requests==2.31.
 django-cors-headers==4.4.0
+faker==28.4.1
